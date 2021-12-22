@@ -30,7 +30,7 @@ function getSymbol() {
 
 function generatePassword() {
     
-	const len = lengthWise.value;
+    const len = lengthWise.value;
 
     let password = "";
 
