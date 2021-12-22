@@ -1,5 +1,5 @@
 const jelszo = document.getElementById("password");
-const hosszusag = document.getElementById("length");
+const lengthwise = document.getElementById("length");
 const pwError = document.getElementById("error");
 const upper = document.getElementById("upper");
 const lower = document.getElementById("lower");
@@ -30,7 +30,7 @@ function getSymbol() {
 
 function generatePassword() {
     
-	const len = hosszusag.value;
+	const len = lengthwise.value;
 
     let password = "";
 
@@ -39,7 +39,7 @@ function generatePassword() {
         password += passwordCharacter;
     }
 	
-	/* Validálás */
+	/* Validation */
 	if(password.length === 0){
 		jelszo.innerText = "";
 		pwError.innerText = "A jelszónak tartalmaznia kell valamit!";
