@@ -1,5 +1,5 @@
-const jelszo = document.getElementById("password");
-const lengthwise = document.getElementById("length");
+const pw = document.getElementById("password");
+const lengthWise = document.getElementById("length");
 const pwError = document.getElementById("error");
 const upper = document.getElementById("upper");
 const lower = document.getElementById("lower");
@@ -30,7 +30,7 @@ function getSymbol() {
 
 function generatePassword() {
     
-	const len = lengthwise.value;
+	const len = lengthWise.value;
 
     let password = "";
 
@@ -41,13 +41,13 @@ function generatePassword() {
 	
 	/* Validation */
 	if(password.length === 0){
-		jelszo.innerText = "";
+		pw.innerText = "";
 		pwError.innerText = "A jelszónak tartalmaznia kell valamit!";
 	} else if(password.length<=3 || password.length>=16){
-		jelszo.innerText = "";
+		pw.innerText = "";
 		pwError.innerText = "A jelszó 4-15 karakterből állhat!"
 	} else {
-		jelszo.innerText = password;
+		pw.innerText = password;
 		pwError.innerText = "";
 	}
 }
