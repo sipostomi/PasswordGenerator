@@ -6,12 +6,12 @@
 
 body {
     background: url('../image/hatter.gif') no-repeat fixed center;
-	background-color: black;
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-	font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     min-height: 100vh;
 }
@@ -34,7 +34,7 @@ body {
     position: relative;
     padding: 1rem;
     overflow: auto;
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .body {
@@ -48,8 +48,8 @@ body {
 }
 
 .generate {
-	font-family: 'Montserrat', sans-serif;
-	color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     background-color: black;
     border: none;
     cursor: pointer;
